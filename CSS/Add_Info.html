@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>CSS Basics</title>
+    <style>
+        h1::first-line {
+            font-style: italic;
+        }
+
+        .info p::after {
+            content: " Read more »";
+            color: #007bff;
+        }
+
+        .quote p::before {
+            content: "“";
+            font-size: 24px;
+            color: #888;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to CS 311 - Web Programming</h1>
+
+    <div class="quote">
+        <p>This is a famous quote.</p>
+    </div>
+
+    <div class="info">
+        <p>This is some additional information.</p>
+    </div>
+
+</body>
+</html>
