@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img{
+                display: block;
+                margin: auto;
+            }
+            p{
+                color: red;
+                font-style: italic;
+                background-color: lightpink;
+            }
+        </style>
+        <title>Addmission Form</title>
+        <link  rel="Stylesheet" type="text/css" href="practice.css">
+    </head>
+    <body>
+        <img src="WAWA MN.png" alt="logo" width="200" height="200">
+
+        <h1>Addmission Form</h1>
+        <form action="/submit" method="post">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender">
+            <label for="other">Other</label><br><br>
+
+            <label for="course">Select Course</label><br>
+            <select id="course" name="course">
+                <option value="ds">Data Science</option>
+                <option value="cs">Computer Science</option>
+            </select>
+            <br><br>
+
+            <label for="resume">Upload Resume:</label><br>
+            <input type="file" id="resume" name="resume">
+
+            <br><br>
+            <label for="comment">Addtional Comments:</label><br>
+            <textarea type="text" id="text" name="comment" rows="4" cols="30"></textarea><br><br>
+
+            <label for="sub">Subscribe to Newsletter</label>
+            <input type="checkbox" id="check" name="sub"><br><br>
+
+            <p>This time is the most beautiful if you think in deep</p>
+            
+            <!-- <button type="submit">Submit</button> -->
+
+            <button custom-attr>Submit</button>
+            
+
+
+        </form>
+
+        <table border="1" cellpadding="10" cellspacing="0">
+            <caption>Courses</caption>
+            <tr>
+                <td style= "text-align: center;"  colspan="4">JaneJahan</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Janan</td>
+            </tr>
+
+            <tr>
+                <th>Name</th>
+                <th>Section</th>
+                <th>Roll Number</th>
+
+            </tr>
+            <tr>
+                <td>Khalida</td>
+                <td>E</td>
+                <td>1416</td>
+            </tr>
+            <td colspan="3">My world My life</td>
+            
+
+        </table>
+    </body>
+
+
+</html>
+

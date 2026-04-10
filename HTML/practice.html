@@ -27,15 +27,39 @@
     <textarea id="comments" name="comments" rows="10" cols="50"></textarea>
 </form> -->
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
-        <h1>Admission Form</h1>
+    <title>Admission Form</title>
+    <style>
+        p {
+            font-size: 15px;
+            background-color:lightpink;
+        }
+        img{
+            display: block;
+            margin: auto;
+        }
+        p{
+            color: green;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        [custom-attr]{
+            background-color: aqua;
+        }
+        
+    </style>
+    <link rel="Stylesheet" type="text/css" href=practice.css>
     </head>
     <body>
+        <img src="WAWA MN.png" alt="Logo" width="200", height="200"  />
+
+        <h1>Admission Form</h1>
+
+        
         <form action="/submit" method="post">
 
-            <label for="name">Full Name:</label><br>
+            <label for="username">Full Name:</label><br>
             <input type="text" id="username" name="username"><br><br>
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email"><br><br>
@@ -45,11 +69,11 @@
             <input type="date" id="date" name="date" required><br><br>
 
             <label for="gender">Gender:</label><br>
-            <input type="radio" id="male" name="male" >
+            <input type="radio" id="male" name="gender" >
             <label for="male">Male</label><br>
-            <input type="radio" id="female" name="female">
+            <input type="radio" id="female" name="gender">
             <label for="female">Female</label><br>
-            <input type="radio" id="other" name="other">
+            <input type="radio" id="other" name="gender">
             <label for="other">Other</label><br><br>
 
             <label for="course">Select Course:</label><br>
@@ -69,15 +93,16 @@
             <label for="sub">Subscribe to Newsletter:</label>
             <input type="checkbox" id="sub" name="sub" value="yes"><br><br>
 
-            <button type="submit">Submit</button>
+            <p>My world of love</p>
+            <button custom-attr>Submit</button>
 
         </form>
     </body>
-</html> -->
+</html>
+<br><br>
 
 <!-- creation of table -->
-
-<!-- <table border="1" cellpadding="10" cellspacing="0">
+<table border="1" cellpadding="10" cellspacing="0">
     <caption>Couple Friendship</caption>
     <tr>
         <td rowspan="6">-</td>
@@ -107,4 +132,4 @@
         <td colspan="3">Love Each Other Beyound the limits for an year upto the whole life</td>
     </tr>
 
-</table> -->
+</table>
