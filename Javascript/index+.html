@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Better Counter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+        }
+
+        .counter {
+            text-align: center;
+            background: white;
+            padding: 20px 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        button {
+            font-size: 20px;
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background: #007bff;
+            color: white;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        #count {
+            font-size: 40px;
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="counter">
+    <button onclick="decrement()">-</button>
+    <span id="count">0</span>
+    <button onclick="increment()">+</button>
+    <br>
+    <button onclick="reset()">Reset</button>
+</div>
+
+<script>
+    let count = 0;
+    const countDisplay = document.getElementById("count");
+
+    function updateDisplay() {
+        countDisplay.textContent = count;
+    }
+
+    function increment() {
+        count++;
+        updateDisplay();
+    }
+
+    function decrement() {
+        if (count > 0) {   // prevent negative
+            count--;
+            updateDisplay();
+        }
+    }
+
+    function reset() {
+        count = 0;
+        updateDisplay();s
+    }
+
+    // Keyboard support
+    document.addEventListener("keydown", function(e) {
+        if (e.key === "ArrowUp") increment();
+        if (e.key === "ArrowDown") decrement();
+    });
+</script>
+
+</body>
+</html>

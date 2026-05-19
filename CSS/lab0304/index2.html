@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Contextual Classes</h2>
+  <p>Contextual classes can be used to color table rows or table cells. The classes that can be used are: .active, .success, .info, .warning, and .danger.</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Default</td>
+        <td>Defaultson</td>
+        <td>def@somemail.com</td>
+      </tr>      
+      <tr class="success">
+        <td>Success</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr class="danger">
+        <td>Danger</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr class="info">
+        <td>Info</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+      <tr class="warning">
+        <td>Warning</td>
+        <td>Refs</td>
+        <td>bo@example.com</td>
+      </tr>
+      <tr class="active">
+        <td>Active</td>
+        <td>Activeson</td>
+        <td>act@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+
+
+<style>
+
+/* Base styles for all screens */
+.sidebar {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.nav-menu {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.nav-menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu ul{
+    list-style: none;
+    padding: 0;
+}
+
+.nav-menu li{
+    margin: 5px 0;
+}
+
+/* Hide the sidebar on screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+/* Hide the navigation menu for print media */
+@media print {
+    .nav-menu {
+        display: none;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+<h2>Sidebar Content</h2>
+<p>This is sidebar content. It will be hidden on small screens.</p>
+</div>
+
+<div class="nav-menu">
+<h2>Navigation Menu</h2>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+
+</body>
+</html>

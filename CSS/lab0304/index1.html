@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+/* Default style for large screens */
+body{
+    background-color: lightgreen;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+/* When screen width is 600px or less */
+@media only screen and (max-width:600px){
+    body{
+        background-color: lightblue;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Media Query Example</h1>
+
+<p>
+Resize the browser window to see the effect.
+</p>
+
+<p>
+If the screen width is <b>600px or less</b>, the background color changes to <b>light blue</b>.
+Otherwise it remains <b>light green</b>.
+</p>
+
+</body>
+</html>
