@@ -9,3 +9,8 @@ let age=23;
 console.log('Name:',name,'Age:',age);
 var d=34; // local 
 console.log('sub',d-c);
+let person={name:"Ali", age:23}
+console.log(person)
+let age=20;
+let isadult=(Age>=18)? 'Yes':'No';
+consule

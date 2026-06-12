@@ -75,13 +75,14 @@
 
     function reset() {
         count = 0;
-        updateDisplay();s
+        updateDisplay();
     }
 
     // Keyboard support
     document.addEventListener("keydown", function(e) {
         if (e.key === "ArrowUp") increment();
         if (e.key === "ArrowDown") decrement();
+        if(e.key === "Enter") reset();
     });
 </script>
 

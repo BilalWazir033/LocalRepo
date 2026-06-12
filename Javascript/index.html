@@ -7,6 +7,7 @@
         <button onclick="decrement()">-</button>
         <span id="count">0</span>
         <button onclick="increment()">+</button>
+        <button onclick="reset()">reset</button>
         <script>
             let count=0;
             const countDisplay=document.getElementById("count");
@@ -16,7 +17,13 @@
                 countDisplay.textContent=count;
             }
             function decrement(){
-                count--;
+                if(count>0){
+                    count--;
+                    countDisplay.textContent=count;
+                }
+            }
+            function reset(){
+                count =0
                 countDisplay.textContent=count;
             }
         </script>
