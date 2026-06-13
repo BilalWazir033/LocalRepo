@@ -24,3 +24,27 @@ else if(num>=18 && num<60){
 else{
     console.log("you are too old. Rest please");
 }
+for (let i = 0; i < 5; i++) {
+if (i === 2) {
+continue;
+}
+console.log("Iteration:", i);
+}
+console.log("we");
+for (let i = 0; i < 5; i++) {
+if (i === 3) {
+break;
+}
+console.log("Iteration:", i);
+}
+function greet(name){
+    return `Hello, ${name}!`;
+}
+let mes=greet('wahid');
+console.log(mes)
+
+const button = document.getElementById('myButton');
+button.addEventListener('click', function(event) {
+// Handle the click event
+console.log('Button clicked!');
+});

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Common Event Types Example</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      padding: 40px;
+      width: 600px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      margin-bottom: 25px;
+    }
+
+    button {
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 25px;
+    }
+
+    #hoverBox {
+      background: #e5e5e5;
+      padding: 25px;
+      margin: 20px auto;
+      width: 80%;
+    }
+
+    input {
+      padding: 8px;
+      margin: 8px;
+      width: 250px;
+    }
+
+    #output {
+      margin-top: 20px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Common Event Types Example</h1>
+
+  <!-- Click Event -->
+  <button id="clickBtn">Click Me (Click Event)</button>
+
+  <!-- Mouse Event -->
+  <div id="hoverBox">
+    Hover over this area (Mouse Events)
+  </div>
+
+  <!-- Keyboard Event -->
+  <input
+    type="text"
+    id="keyboardInput"
+    placeholder="Type something (Keyboard Event)"
+  >
+
+  <br>
+
+  <!-- Form Change Event -->
+  <input
+    type="text"
+    id="changeInput"
+    placeholder="Change input value (Form Event)"
+  >
+
+  <br>
+
+  <button id="submitBtn">Submit</button>
+
+  <p>Scroll to see the effect of window events (Window Events).</p>
+
+  <div id="output"></div>
+</div>
+
+<script>
+  // Click Event
+  document.getElementById("clickBtn").addEventListener("click", function () {
+    console.log("Button clicked!");
+    document.getElementById("output").innerText =
+      "Click Event Triggered";
+  });
+
+  // Mouse Event
+  document.getElementById("hoverBox").addEventListener("mouseover", function () {
+    console.log("Mouse over detected!");
+    document.getElementById("output").innerText =
+      "Mouse Over Event Triggered";
+  });
+
+  // Keyboard Event
+  document.getElementById("keyboardInput").addEventListener("keyup", function (event) {
+    console.log("You typed:", event.target.value);
+    document.getElementById("output").innerText =
+      "Keyboard Input: " + event.target.value;
+  });
+
+  // Form Change Event
+  document.getElementById("changeInput").addEventListener("change", function (event) {
+    console.log("Changed value:", event.target.value);
+    document.getElementById("output").innerText =
+      "Changed Value: " + event.target.value;
+  });
+
+  // Submit Button
+  document.getElementById("submitBtn").addEventListener("click", function () {
+    alert("Form Submitted!");
+  });
+
+  // Window Scroll Event
+  window.addEventListener("scroll", function () {
+    console.log("Window Scrolled");
+  });
+</script>
+
+</body>
+</html>
