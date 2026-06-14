@@ -43,8 +43,42 @@ function greet(name){
 let mes=greet('wahid');
 console.log(mes)
 
-const button = document.getElementById('myButton');
-button.addEventListener('click', function(event) {
-// Handle the click event
-console.log('Button clicked!');
+// const button = document.getElementById('myButton');
+// button.addEventListener('click', function(event) {
+// // Handle the click event
+// console.log('Button clicked!');
+// });
+
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Middle");
+}, 2000);
+ console.log("End");
+// setInterval(()=>{
+//     console.log("Repeating code execution");
+// },1000);
+
+function fetchData(callback) {
+// Simulating data fetching asynchronously
+setTimeout(() => {
+const data = 'Some fetched data';
+callback(data);
+}, 1500);
+}
+function processFetchedData(data) {
+console.log('Processing data:', data);
+}
+fetchData(processFetchedData);
+
+let promise = new Promise((resolve, reject) => {
+
+    let dataLoaded = true;
+
+    if (dataLoaded) {
+        resolve("Data loaded successfully ✅");
+    } else {
+        reject("Failed to load data ❌");
+    }
+
 });
