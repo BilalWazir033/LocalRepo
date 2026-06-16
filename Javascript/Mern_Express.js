@@ -12,3 +12,4 @@ app.listen(3000, () => {
 app.get("/", (req, res) => {
   res.send("Home Page");
 });
+console.log("we are with yoiu");
