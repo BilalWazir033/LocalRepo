@@ -1,0 +1,12 @@
+Words with frequency greater than 2:
+-----------------------------------
+centuries : 3
+empire : 17
+history : 3
+known : 4
+military : 3
+ottoman : 13
+over : 3
+sultanateeusmania : 3
+under : 3
+world : 4
