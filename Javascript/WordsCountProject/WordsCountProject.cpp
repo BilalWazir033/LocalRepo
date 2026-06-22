@@ -28,7 +28,7 @@ int main() {
     map<string, int> wordFrequency;
 
     set<string> stopWords = {
-        "the", "and", "is", "of", "to", "in", "a", "an", "for", "on", "with","were","from", "over"
+        "the", "and", "is", "of", "to", "in", "a", "an", "for", "on", "with","were","from"
     };
 
     cout << "Enter input file name: ";
