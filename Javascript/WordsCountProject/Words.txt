@@ -2,6 +2,7 @@ Words with frequency greater than 2:
 -----------------------------------
 centuries : 3
 empire : 17
+from : 3
 history : 3
 known : 4
 military : 3
