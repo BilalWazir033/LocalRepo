@@ -147,3 +147,32 @@ function great(){
     console.log("Welcome to the world of programming");
 }
 great();
+// for each loop
+let fruits=['apple','banana','mango','orange'];
+fruits.pop("orange");
+fruits.push("Strawberry");
+// fruits.shift();//apple is removed
+fruits.forEach(function(fruits){
+    console.log(fruits);
+})
+console.log(fruits.indexOf('mango'));
+let student={
+    name:'Ali',
+    age:'23',
+    semester:'4',
+    deprtt:'Agr Engr',
+    displayInfo:function(){
+        return `${this.name} ${this.age} (${this.semester})`;
+    }
+};
+console.log(student)
+// Serialization
+// Json to string
+let person='Khalid';
+let jstring=JSON.stringify(person);
+console.log(jstring);
+
+// Deserilization
+let jsondata = '{"name":"Alice","age":23}';
+let parseobj=JSON.parse(jsondata);
+console.log(parseobj.name);
