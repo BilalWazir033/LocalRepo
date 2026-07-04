@@ -137,5 +137,13 @@ do{
     console.log("Happy Birthday");
     c++;
 }while(c<6);
-
-
+for(let i=0; i<5; i++){
+    if(i===3){
+        continue;
+    }
+    console.log("Iterations: ",i);
+}
+function great(){
+    console.log("Welcome to the world of programming");
+}
+great();
